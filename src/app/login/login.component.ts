@@ -18,18 +18,18 @@ export class LoginComponent {
             'password': 'cityslicka'
         };
 
-        return new Promise((resolve, reject) => {
-            self.http
-            .post('https://reqres.in/api/login', postData)
-            .subscribe((response) => {
-                alert('yes');
-                resolve(response);
+        // return new Promise((resolve, reject) => {
+        //     self.http
+        //     .post('https://reqres.in/api/login', postData)
+        //     .subscribe((response) => {
+        //         alert('yes');
+        //         resolve(response);
 
-            },
-            (err) => {
-                alert('Error');
-            });
-        });
+        //     },
+        //     (err) => {
+        //         alert('Error');
+        //     });
+        // });
 
     }
 
